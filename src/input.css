@@ -11,13 +11,11 @@
 @theme {
   --color-hoverSpt: #18d760;
   --color-purple-main: #2D46B9;
-  --green-main: #1ED760;
+  --green-main: #1ED760;  
   /* ... */
 }
 
 @layer components {
-    .spotify-theme {
-        
-    }
+    
   
 }

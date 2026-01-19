@@ -4,13 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="/src/img/favicon.png" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    <script
+      src="https://kit.fontawesome.com/5be0945cad.js"
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    ></script>
     <link rel="stylesheet" href="/dist/output.css" />
     <title>Spotify Clone</title>
   </head>
@@ -18,10 +15,10 @@
     <!-- navbar -->
     <header class="bg-black px-3 py-4 fixed w-full md:px-20">
       <!-- container nav -->
-      <nav class="flex items-center justify-between">
+      <nav class="flex items-center justify-between container mx-auto">
         <a href="#">
           <img
-            src="/src/img/spotify-logo.png"
+            src="/dist/src/img/spotify-logo.png"
             alt="Spotify Clone"
             class="w-20 md:w-31.25"
           />
@@ -29,27 +26,33 @@
         <div class="md:hidden flex justify-end flex-1 text-3xl">
           <i class="fas fa-bars text-white"></i>
         </div>
-        <ul
-          class="text-white items-end justify-end flex-1 font-bold hidden md:flex"
-        >
+        <ul class="text-white justify-end flex-1 font-bold hidden md:flex">
           <li>
-            <a href="#" class="self-center justify-self-center text-sm px-4 hover:text-hoverSpt"
+            <a
+              href="#"
+              class="self-center justify-self-center text-sm px-4 hover:text-hoverSpt"
               >Premium</a
             >
           </li>
           <li>
-            <a href="#" class="self-center justify-self-center text-sm px-4 hover:text-hoverSpt"
+            <a
+              href="#"
+              class="self-center justify-self-center text-sm px-4 hover:text-hoverSpt"
               >Ajuda</a
             >
           </li>
           <li>
-            <a href="#" class="self-center justify-self-center text-sm px-4 hover:text-hoverSpt"
+            <a
+              href="#"
+              class="self-center justify-self-center text-sm px-4 hover:text-hoverSpt"
               >Baixar</a
             >
           </li>
-          <li><span class="text-2xl">&#124;</span></li>
+          <!-- <li><span class="border-r border-white"></span></li> -->
           <li>
-            <a href="#" class="self-center justify-self-center text-sm px-4 hover:text-hoverSpt"
+            <a
+              href="#"
+              class="self-center justify-self-center text-sm px-4 hover:text-hoverSpt"
               >Inscrever-se</a
             >
           </li>
@@ -64,6 +67,14 @@
       </nav>
     </header>
     <!-- main -->
+    <main class="bursts h-screen">
+      <section class="flex flex-col justify-center text-center h-full w-full bg-[url(./src/img/bursts.svg)] bg-cover bg-center bg-purple-main">
+        <h1 class="">Escutar muda tudo</h1>
+        <p>Milhões de músicas e podcasts para explorar.</p>
+        <a href="#">Obtenha o Spotfiy Free</a>
+      </section>
+    </main>
     <!-- footer -->
+    <!-- <div class="bg-[#bada55] text-[22px]">Teste</div> Teste -->
   </body>
 </html>
