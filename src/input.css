@@ -6,16 +6,59 @@
     font-display
 
     E assim vai...
+
+    --color-avocado-300: valorDaCor
  */
 
 @theme {
   --color-hoverSpt: #18d760;
-  --color-purple-main: #2D46B9;
-  --green-main: #1ED760;  
+  --color-purple-main: #2d46b9;
+  --color-green-main: #1ed760;
   /* ... */
 }
 
 @layer components {
-    
-  
+  .header {
+    @apply bg-black px-3 py-4 fixed w-full md:px-20;
+  }
+
+  .nav {
+    @apply flex items-center justify-between container mx-auto;
+  }
+
+  .link-nav_list {
+    @apply text-white justify-end flex-1 font-bold hidden md:flex;
+  }
+
+  .bg-banner {
+    @apply bg-[url(./src/img/bursts.svg)] bg-size-[195%];
+  }
+
+  .bg-banner_mobile {
+    @apply md:bg-[url(./src/img/bursts-mobile.svg)] md:bg-size-[175%];
+  }
+
+  .link-nav_item {
+    @apply self-center justify-self-center text-sm px-4 hover:text-hoverSpt;
+  }
+
+  .section-main {
+    @apply flex flex-col justify-center items-center text-center h-full w-full bg-cover bg-center bg-purple-main text-green-main py-40 px-4;
+  }
+
+  .section-h1 {
+    @apply text-5xl md:text-9xl mb-10 font-bold max-w-4xl mx-auto leading-none;
+  }
+
+  .section-p {
+    @apply md:text-lg mb-10;
+  }
+
+  .section-a {
+    @apply bg-green-main hover:bg-white text-purple-main text-sm rounded-full px-10 py-3 uppercase font-bold max-w-xl text-center self-center tracking-widest transition duration-500;
+  }
+
+  .footer {
+    @apply bg-black px-3 py-4 fixed w-full md:px-20 h-10;
+  }
 }
