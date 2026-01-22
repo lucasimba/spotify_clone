@@ -57,4 +57,36 @@
   .section-a {
     @apply bg-green-main hover:bg-white text-purple-main text-sm rounded-full px-10 py-3 uppercase font-bold max-w-xl text-center self-center tracking-widest transition duration-500;
   }
+
+  .section-footer {
+    @apply grid grid-cols-1 md:grid-cols-6 bg-black p-4 text-white md:p-20 gap-15;
+  }
+
+  .section-footer_logo {
+    @apply md:col-span-1 pt-10;
+  }
+
+  .section-footer_logo-img {
+    @apply w-20 md:w-[132px];
+  }
+
+  .section-footer_links {
+    @apply md:col-span-1 pt-10 md:pt-0;
+  }
+
+  .section-footer_title {
+    @apply font-bold uppercase text-gray-500 text-xs tracking-widest mb-5;
+  }
+
+  .section-footer_brands {
+    @apply md:col-span-2 pt-10 flex md:pt-0 md:justify-end gap-5;
+  }
+
+  .section-footer_brands-item {
+    @apply flex items-center justify-center text-2xl bg-gray-900 w-12 h-12 rounded-full hover:text-green-main;
+  }
+
+  .section-footer_legal {
+    @apply md:col-span-1 mt-20;
+  }
 }
